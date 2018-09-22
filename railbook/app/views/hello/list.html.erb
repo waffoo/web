@@ -1,0 +1,17 @@
+<table border="1">
+    <tr>
+        <th> ISBN </th><th>name</th><th>price</th>
+        <th> publisher</th><th>date</th><th>CD</th>
+    </tr>
+
+<% @books.each do |book| %>
+    <tr>
+        <td><%= book.isbn %></td>
+        <td><%= book.title %></td>
+        <td><%= book.price %></td>
+        <td><%= book.publish %></td>
+        <td><%= book.published %></td>
+        <td><%= book.cd %></td>
+    </tr>
+<% end %>
+</table>
